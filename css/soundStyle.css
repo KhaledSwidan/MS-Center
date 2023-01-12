@@ -1,0 +1,124 @@
+:root {
+  --top-bg: rgba(89, 93, 97, 0.75);
+  --bottom-bg: rgba(24, 25, 28, 0.75);
+  --lightblack: #515c6f;
+  --white: #ffffff;
+  --lightbshadow: rgba(0, 0, 0, 0.15);
+  --main-color: #009bff;
+}
+.soundShow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(to top, var(--bottom-bg), var(--top-bg) 100%);
+}
+.soundShow .container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+.soundShow .container svg {
+  cursor: pointer;
+}
+.top-bar,
+.music-list .header,
+.music-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-bar svg {
+  font-size: 30px;
+  color: var(--white);
+}
+.top-bar svg:first-child {
+  margin-left: -7px;
+}
+.img-area {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px var(--lightbshadow);
+}
+.img-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.song-details {
+  margin: 30px 0;
+}
+.song-details p {
+  color: var(--white);
+}
+.song-details .name {
+  font-size: 21px;
+  color: #000;
+}
+.song-details .artist {
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 35px;
+}
+.progress-area {
+  height: 6px;
+  width: 100%;
+  border-radius: 50px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+.progress-area .progress-bar {
+  height: inherit;
+  width: 0%;
+  position: relative;
+  border-radius: inherit;
+  background: #000;
+}
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  top: 50%;
+  right: -5px;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  background: inherit;
+  transition: opacity 0.2s ease;
+}
+.progress-area:hover .progress-bar::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+.controls svg {
+  font-size: 28px;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+.controls .play-pause {
+  height: 54px;
+  width: 54px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bottom-bg);
+  transition: background 0.3s ease;
+}
+.controls .play-pause:hover {
+  background: var(--main-color);
+}
+
+.play-pause svg {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.controls svg:hover:not(.play-pause svg) {
+  color: var(--main-color);
+}

@@ -1,0 +1,124 @@
+        <div class="dropdown d-flex justify-content-center mt-3">
+          <button
+            class="btn bg-primary text-white dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Choose Your Language
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="Dropdown">
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="sa flag"></i>
+                العربية
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="gb uk flag"></i>
+                English
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item disabled" href="#">
+                <i class="pl flag"></i>
+                Polski
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="cn flag"></i>
+                中文
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="jp flag"></i>
+                日本語
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="de flag"></i>
+                Deutsch
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="fr flag"></i>
+                Français
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="es flag"></i>
+                Español
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="ru flag"></i>
+                Русский
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="pt flag"></i>
+                Português
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          id="carouselMSImgs"
+          class="carousel slide my-4"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselMSImgs"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselMSImgs"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselMSImgs"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselMSImgs"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselMSImgs"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./1.jfif" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./2.jfif" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./3.jfif" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./4.jfif" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./5.jfif" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+        </div>
